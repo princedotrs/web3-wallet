@@ -11,8 +11,8 @@ export const EthWallet = ({buttonStyle,mnemonic,net,refreshCounter}) => {
     const [visible,setVisible] = useState(false);
     const [visiblity,setVisiblity] = useState(false);
     const [loading,setLoading] = useState(false);
-    const mainnetRPC = "https://fittest-white-sound.quiknode.pro/2f08cc49d2b9b2116d50437b2105afe0b63b98bb";
-    const devnentRPC = "https://fittest-white-sound.ethereum-sepolia.quiknode.pro/2f08cc49d2b9b2116d50437b2105afe0b63b98bb";
+    const mainnetRPC = "https://ethereum-rpc.publicnode.com";
+    const devnentRPC = "https://ethereum-sepolia-rpc.publicnode.com";
     const etherQuickNode_RPC = net === "mainnet"?mainnetRPC:devnentRPC;
     
     const fetchBalance = useCallback(async (address)=>{
