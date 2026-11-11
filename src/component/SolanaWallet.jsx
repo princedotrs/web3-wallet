@@ -13,8 +13,8 @@ export const SolanaWallet = ({ mnemonic,buttonStyle, net, refreshCounter }) => {
     const [visible, setVisible] = useState(false);
     const [visiblity,setVisiblity] = useState(false);
     const [loading,setLoading] = useState(false);
-    const mainnetRpc = "https://fittest-white-sound.solana-mainnet.quiknode.pro/2f08cc49d2b9b2116d50437b2105afe0b63b98bb";
-    const devnetRpc = "https://fittest-white-sound.solana-devnet.quiknode.pro/2f08cc49d2b9b2116d50437b2105afe0b63b98bb";
+    const mainnetRpc = "https://api.mainnet-beta.solana.com";
+    const devnetRpc = "https://api.devnet.solana.com";
     const solanaQuickNode_RPC = net === "mainnet" ? mainnetRpc : devnetRpc;
 
     const refreshBalanceSol = useCallback(async () => {
